@@ -1,0 +1,10 @@
+package co.edureka.io;
+
+public class EmployeeSave {
+
+	public static void main(String[] args) {
+		Employee emp = new Employee(101,"Sunil Joseph",2500.5f);
+		System.out.println(emp.empno);
+	}
+
+}

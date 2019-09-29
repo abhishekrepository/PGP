@@ -1,0 +1,27 @@
+package co.edureka.algorithms;
+
+public class BinarySearch {
+
+	public static void main(String[] args) {
+		int[] arr = {3,6,8,12,14,17,25,29,31,36,42,47,53,55,62};
+		int key = 6;
+		BinarySearch bs = new BinarySearch();
+		int index = bs.binarySearch(arr,0,arr.length,key);
+		System.out.println(key + " @ "+index);
+	}
+	int binarySearch(int[] arr,int beg, int end, int key) {
+		while(end>=beg) {
+		int mid = (beg+end)/2;
+		if(arr[mid]==key)
+			return mid;
+		else if(arr[mid]>key)
+			end=mid-1;
+		else
+			beg=mid+1;
+		
+		return binarySearch(arr,beg,end,key);
+		}
+		return -1;
+	}
+
+}

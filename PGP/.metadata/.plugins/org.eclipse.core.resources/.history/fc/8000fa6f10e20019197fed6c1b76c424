@@ -1,0 +1,10 @@
+package co.edureka.project1;
+
+public class SavingsAccount extends Account {
+ float interest;
+ public SavingsAccount(String acno, String name, float amt, float intrst) {
+	 super(acno,name,amt);
+	 this.interest = intrst;
+	 System.out.println("Saving Accont is created");
+ }
+}

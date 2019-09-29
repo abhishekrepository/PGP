@@ -1,0 +1,21 @@
+package co.edureka.io;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class EmployeeRead {
+
+	public static void main(String[] args) throws Exception{
+		FileInputStream fin = new FileInputStream("src/employee.txt");
+		ObjectInputStream oin = new ObjectInputStream(fin);
+		
+		Object obj = oin.readObject();
+		if(obj instanceof Employee) {
+			Employee e = (Employee)obj;
+			System.out.println(e);
+		}
+		oin.close();
+		fin.close();
+	}
+
+}

@@ -1,0 +1,22 @@
+package co.edureka.io;
+
+import java.util.Scanner;
+
+public class EmployeeSave {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter empno : ");
+		int eno = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("enter employee name: ");
+		String name = sc.nextLine();
+		
+		System.out.println("enter salary: ");
+		float sal = sc.nextFloat();
+		
+		Employee emp = new Employee(eno,name,sal);
+		System.out.println(emp); //toString()
+	}
+}

@@ -1,0 +1,6 @@
+package co.edureka.project1;
+
+public class CurrentAccount extends Account {
+ int transCount;
+ 
+}

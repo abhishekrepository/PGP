@@ -1,0 +1,15 @@
+package co.edureka.io;
+
+public class Employee {
+ private int empno;
+ private String name;
+ private float sal;
+ 
+ public Employee() {}
+ public Employee(int empno, String name, float sal) {
+	this.empno = empno;
+	this.name = name;
+	this.sal = sal;
+ }
+ 
+}

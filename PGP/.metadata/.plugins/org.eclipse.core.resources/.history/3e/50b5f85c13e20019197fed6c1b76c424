@@ -1,0 +1,33 @@
+package co.edureka.project1;
+
+public class CurrentAccount extends Account {
+ int transCount;
+ static final int ALLOWED_TRANS = 3;
+ 
+public CurrentAccount(String acno, String name, float bal) {
+	super(acno, name, bal);
+	System.out.println("Current Account Created!");
+}
+
+@Override
+public void deposit(float amt) {
+	transCount++;
+	super.deposit(amt);
+}
+
+@Override
+public void withdraw(float amt) {
+	transCount++;
+	super.withdraw(amt);
+}
+
+@Override
+public void getBalance() {
+	transCount++;
+	super.getBalance();
+}
+
+public void serviceCharge() {
+	
+}
+}
